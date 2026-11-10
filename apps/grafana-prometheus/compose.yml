@@ -1,0 +1,17 @@
+# name: Grafana + Prometheus
+services:
+  grafana:
+    image: grafana/grafana:latest
+    restart: unless-stopped
+    ports: ["3000:3000"]
+    environment:
+      GF_SECURITY_ADMIN_PASSWORD: ${ADMIN_PASSWORD:?set ADMIN_PASSWORD}
+    volumes: [grafana:/var/lib/grafana]
+  prometheus:
+    image: prom/prometheus:latest
+    restart: unless-stopped
+    ports: ["127.0.0.1:9090:9090"] # localhost only: Prometheus has no login
+    volumes: [prometheus:/prometheus]
+volumes:
+  grafana:
+  prometheus:

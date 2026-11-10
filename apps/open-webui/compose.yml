@@ -1,0 +1,10 @@
+# name: Open WebUI
+# note: Measured without any local model. Running models with Ollama on the same server needs RAM for the model on top of this.
+services:
+  open-webui:
+    image: ghcr.io/open-webui/open-webui:main
+    restart: unless-stopped
+    ports: ["3000:8080"]
+    volumes: [data:/app/backend/data]
+volumes:
+  data:

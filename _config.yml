@@ -1,0 +1,5 @@
+# GitHub Pages: publishes the README files as a site with a sitemap.
+title: Self-hosted VPS requirements
+description: Measured RAM and disk requirements for self-hosted apps, and the smallest VPS that runs each.
+plugins:
+  - jekyll-sitemap

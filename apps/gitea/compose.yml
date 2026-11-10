@@ -1,0 +1,9 @@
+# name: Gitea
+services:
+  gitea:
+    image: gitea/gitea:latest
+    restart: unless-stopped
+    ports: ["3000:3000", "2222:22"]
+    volumes: [data:/data]
+volumes:
+  data:

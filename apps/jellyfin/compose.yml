@@ -1,0 +1,12 @@
+# name: Jellyfin
+# note: No library and no playback. Transcoding needs far more CPU than RAM.
+services:
+  jellyfin:
+    image: jellyfin/jellyfin:latest
+    restart: unless-stopped
+    ports: ["8096:8096"]
+    volumes: [config:/config, cache:/cache, media:/media]
+volumes:
+  config:
+  cache:
+  media:

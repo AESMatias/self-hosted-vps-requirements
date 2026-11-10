@@ -1,0 +1,13 @@
+# name: Minecraft (Java, vanilla)
+# note: JVM heap is set to 1 GB (MEMORY=1G) and no players are online. Raise MEMORY and the VPS size together.
+services:
+  minecraft:
+    image: itzg/minecraft-server:latest
+    restart: unless-stopped
+    ports: ["25565:25565"]
+    environment:
+      EULA: "TRUE"
+      MEMORY: 1G # JVM heap; the measured numbers are for this value
+    volumes: [data:/data]
+volumes:
+  data:

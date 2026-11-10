@@ -1,0 +1,272 @@
+{
+  "apps": {
+    "actual-budget": {
+      "containers": 1,
+      "idle_mb": 239,
+      "boot_peak_mb": 239,
+      "settle_seconds": 61,
+      "settled": true,
+      "image_mb": 560,
+      "images": [
+        "actualbudget/actual-server:latest"
+      ],
+      "measured": "2026-11-10",
+      "name": "Actual Budget",
+      "note": "",
+      "min_vps_gb": 1
+    },
+    "code-server": {
+      "containers": 1,
+      "idle_mb": 55,
+      "boot_peak_mb": 55,
+      "settle_seconds": 61,
+      "settled": true,
+      "image_mb": 1500,
+      "images": [
+        "codercom/code-server:latest"
+      ],
+      "measured": "2026-11-10",
+      "name": "code-server (VS Code in the browser)",
+      "note": "Measured with no browser session connected. Opening the editor starts the extension host, which uses considerably more memory.",
+      "min_vps_gb": 1
+    },
+    "ghost": {
+      "containers": 2,
+      "idle_mb": 643,
+      "boot_peak_mb": 710,
+      "settle_seconds": 72,
+      "settled": true,
+      "image_mb": 2240,
+      "images": [
+        "ghost:latest",
+        "mysql:8.4"
+      ],
+      "measured": "2026-11-10",
+      "name": "Ghost",
+      "note": "",
+      "min_vps_gb": 2
+    },
+    "gitea": {
+      "containers": 1,
+      "idle_mb": 78,
+      "boot_peak_mb": 78,
+      "settle_seconds": 62,
+      "settled": true,
+      "image_mb": 262,
+      "images": [
+        "gitea/gitea:latest"
+      ],
+      "measured": "2026-11-10",
+      "name": "Gitea",
+      "note": "",
+      "min_vps_gb": 1
+    },
+    "grafana-prometheus": {
+      "containers": 2,
+      "idle_mb": 313,
+      "boot_peak_mb": 314,
+      "settle_seconds": 62,
+      "settled": true,
+      "image_mb": 2409,
+      "images": [
+        "prom/prometheus:latest",
+        "grafana/grafana:latest"
+      ],
+      "measured": "2026-11-10",
+      "name": "Grafana + Prometheus",
+      "note": "",
+      "min_vps_gb": 1
+    },
+    "jellyfin": {
+      "containers": 1,
+      "idle_mb": 162,
+      "boot_peak_mb": 163,
+      "settle_seconds": 61,
+      "settled": true,
+      "image_mb": 2490,
+      "images": [
+        "jellyfin/jellyfin:latest"
+      ],
+      "measured": "2026-11-10",
+      "name": "Jellyfin",
+      "note": "No library and no playback. Transcoding needs far more CPU than RAM.",
+      "min_vps_gb": 1
+    },
+    "minecraft": {
+      "containers": 1,
+      "idle_mb": 994,
+      "boot_peak_mb": 994,
+      "settle_seconds": 67,
+      "settled": true,
+      "image_mb": 1300,
+      "images": [
+        "itzg/minecraft-server:latest"
+      ],
+      "measured": "2026-11-10",
+      "name": "Minecraft (Java, vanilla)",
+      "note": "JVM heap is set to 1 GB (MEMORY=1G) and no players are online. Raise MEMORY and the VPS size together.",
+      "min_vps_gb": 2
+    },
+    "n8n": {
+      "containers": 1,
+      "idle_mb": 422,
+      "boot_peak_mb": 907,
+      "settle_seconds": 77,
+      "settled": true,
+      "image_mb": 1940,
+      "images": [
+        "docker.n8n.io/n8nio/n8n:latest"
+      ],
+      "measured": "2026-11-10",
+      "name": "n8n",
+      "note": "",
+      "min_vps_gb": 2
+    },
+    "nextcloud": {
+      "containers": 2,
+      "idle_mb": 158,
+      "boot_peak_mb": 200,
+      "settle_seconds": 67,
+      "settled": true,
+      "image_mb": 2776,
+      "images": [
+        "postgres:17",
+        "nextcloud:latest"
+      ],
+      "measured": "2026-11-10",
+      "name": "Nextcloud",
+      "note": "",
+      "min_vps_gb": 1
+    },
+    "nginx-proxy-manager": {
+      "containers": 1,
+      "idle_mb": 65,
+      "boot_peak_mb": 103,
+      "settle_seconds": 62,
+      "settled": true,
+      "image_mb": 1910,
+      "images": [
+        "jc21/nginx-proxy-manager:latest"
+      ],
+      "measured": "2026-11-10",
+      "name": "Nginx Proxy Manager",
+      "note": "",
+      "min_vps_gb": 1
+    },
+    "open-webui": {
+      "containers": 1,
+      "idle_mb": 915,
+      "boot_peak_mb": 1073,
+      "settle_seconds": 103,
+      "settled": true,
+      "image_mb": 6460,
+      "images": [
+        "ghcr.io/open-webui/open-webui:main"
+      ],
+      "measured": "2026-11-10",
+      "name": "Open WebUI",
+      "note": "Measured without any local model. Running models with Ollama on the same server needs RAM for the model on top of this.",
+      "min_vps_gb": 2
+    },
+    "portainer": {
+      "containers": 1,
+      "idle_mb": 18,
+      "boot_peak_mb": 18,
+      "settle_seconds": 62,
+      "settled": true,
+      "image_mb": 201,
+      "images": [
+        "portainer/portainer-ce:lts"
+      ],
+      "measured": "2026-11-10",
+      "name": "Portainer CE",
+      "note": "",
+      "min_vps_gb": 1
+    },
+    "postgres": {
+      "containers": 1,
+      "idle_mb": 23,
+      "boot_peak_mb": 24,
+      "settle_seconds": 61,
+      "settled": true,
+      "image_mb": 646,
+      "images": [
+        "postgres:17"
+      ],
+      "measured": "2026-11-10",
+      "name": "PostgreSQL",
+      "note": "",
+      "min_vps_gb": 1
+    },
+    "umami": {
+      "containers": 2,
+      "idle_mb": 157,
+      "boot_peak_mb": 168,
+      "settle_seconds": 61,
+      "settled": true,
+      "image_mb": 2006,
+      "images": [
+        "postgres:17",
+        "ghcr.io/umami-software/umami:postgresql-latest"
+      ],
+      "measured": "2026-11-10",
+      "name": "Umami",
+      "note": "",
+      "min_vps_gb": 1
+    },
+    "uptime-kuma": {
+      "containers": 1,
+      "idle_mb": 107,
+      "boot_peak_mb": 138,
+      "settle_seconds": 64,
+      "settled": true,
+      "image_mb": 2530,
+      "images": [
+        "louislam/uptime-kuma:2"
+      ],
+      "measured": "2026-11-11",
+      "name": "Uptime Kuma",
+      "note": "",
+      "min_vps_gb": 1
+    },
+    "vaultwarden": {
+      "containers": 1,
+      "idle_mb": 7,
+      "boot_peak_mb": 7,
+      "settle_seconds": 61,
+      "settled": true,
+      "image_mb": 416,
+      "images": [
+        "vaultwarden/server:latest"
+      ],
+      "measured": "2026-11-11",
+      "name": "Vaultwarden",
+      "note": "",
+      "min_vps_gb": 1
+    },
+    "wordpress": {
+      "containers": 2,
+      "idle_mb": 121,
+      "boot_peak_mb": 121,
+      "settle_seconds": 62,
+      "settled": true,
+      "image_mb": 1578,
+      "images": [
+        "mariadb:11",
+        "wordpress:latest"
+      ],
+      "measured": "2026-11-11",
+      "name": "WordPress",
+      "note": "",
+      "min_vps_gb": 1
+    }
+  },
+  "env": {
+    "os": "Ubuntu 24.04.5 LTS",
+    "kernel": "6.8.0-147-generic",
+    "arch": "x86_64",
+    "cpus": 4,
+    "mem_gb": 7.8,
+    "docker": "29.8.1"
+  }
+}

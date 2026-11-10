@@ -1,0 +1,12 @@
+# name: code-server (VS Code in the browser)
+# note: Measured with no browser session connected. Opening the editor starts the extension host, which uses considerably more memory.
+services:
+  code-server:
+    image: codercom/code-server:latest
+    restart: unless-stopped
+    ports: ["8080:8080"]
+    environment:
+      PASSWORD: ${ADMIN_PASSWORD:?set ADMIN_PASSWORD}
+    volumes: [home:/home/coder]
+volumes:
+  home:

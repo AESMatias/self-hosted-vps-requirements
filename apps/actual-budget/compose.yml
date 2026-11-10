@@ -1,0 +1,9 @@
+# name: Actual Budget
+services:
+  actual:
+    image: actualbudget/actual-server:latest
+    restart: unless-stopped
+    ports: ["5006:5006"]
+    volumes: [data:/data]
+volumes:
+  data:
