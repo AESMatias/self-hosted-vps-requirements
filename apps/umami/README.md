@@ -25,13 +25,15 @@ ADMIN_PASSWORD='pick-a-strong-one' docker compose up -d
 
 Or deploy this exact file to a new VPS in one click:
 
-[![Deploy on Hostinger](https://assets.hostinger.com/vps/deploy.svg)](https://www.hostinger.com/docker-hosting?compose_url=https://raw.githubusercontent.com/AESMatias/self-hosted-vps-requirements/main/apps/umami/compose.yml)
+[![Deploy on Hostinger](https://assets.hostinger.com/vps/deploy.svg)](https://www.hostinger.com/docker-hosting?compose_url=https://raw.githubusercontent.com/AESMatias/self-hosted-vps-requirements/main/apps/umami/compose.yml&REFERRALCODE=R79AESMATPOE)
 
 Open the app as soon as it starts and create the admin account. Until you do, anyone who finds the port can.
 
 ## A VPS that fits
 
-- **Vultr**: any Cloud Compute instance with 1 GB RAM or more.
-- **Hostinger**: VPS KVM 1 (4 GB RAM, the smallest plan they sell).
+- **Vultr**: any [Cloud Compute](https://www.vultr.com/promo/try200/?ref=9931816) instance with 1 GB RAM or more.
+- **Hostinger**: [VPS KVM 1](https://www.hostinger.com/vps-hosting?REFERRALCODE=R79AESMATPOE) (4 GB RAM, the smallest plan they sell).
+
+_These are affiliate/referral links: they cost you nothing and help keep the measurements updated._
 
 [All measured apps](../../README.md)

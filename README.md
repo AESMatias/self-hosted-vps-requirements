@@ -33,13 +33,17 @@ Last measured 2026-11-11 on Ubuntu 24.04.5 LTS, x86_64, 4 vCPU, 7.8 GB RAM, Dock
 
 **1 GB apps**
 
-- **Vultr**: any Cloud Compute instance with 1 GB RAM or more.
-- **Hostinger**: VPS KVM 1 (4 GB RAM, the smallest plan they sell).
+- **Vultr**: any [Cloud Compute](https://www.vultr.com/promo/try200/?ref=9931816) instance with 1 GB RAM or more.
+- **Hostinger**: [VPS KVM 1](https://www.hostinger.com/vps-hosting?REFERRALCODE=R79AESMATPOE) (4 GB RAM, the smallest plan they sell).
+
+_These are affiliate/referral links: they cost you nothing and help keep the measurements updated._
 
 **2 GB apps**
 
-- **Vultr**: any Cloud Compute instance with 2 GB RAM or more.
-- **Hostinger**: VPS KVM 1 (4 GB RAM, the smallest plan they sell).
+- **Vultr**: any [Cloud Compute](https://www.vultr.com/promo/try200/?ref=9931816) instance with 2 GB RAM or more.
+- **Hostinger**: [VPS KVM 1](https://www.hostinger.com/vps-hosting?REFERRALCODE=R79AESMATPOE) (4 GB RAM, the smallest plan they sell).
+
+_These are affiliate/referral links: they cost you nothing and help keep the measurements updated._
 <!-- results:end -->
 
 ## What the columns mean

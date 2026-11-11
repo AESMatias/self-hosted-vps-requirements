@@ -22,9 +22,9 @@ DATA = ROOT / "data" / "results.json"
 
 # Links used in the generated docs. An empty value leaves that link out.
 REPO = "AESMatias/self-hosted-vps-requirements"  # "github-user/self-hosted-vps-requirements"
-HOSTINGER_REFERRAL_CODE = ""
-HOSTINGER_URL = ""
-VULTR_URL = ""
+HOSTINGER_REFERRAL_CODE = "R79AESMATPOE"
+HOSTINGER_URL = "https://www.hostinger.com/vps-hosting?REFERRALCODE=R79AESMATPOE"
+VULTR_URL = "https://www.vultr.com/promo/try200/?ref=9931816"
 
 OS_OVERHEAD_MB = 400  # Ubuntu + Docker daemon on an otherwise empty VPS
 TIERS_GB = [1, 2, 4, 8, 16, 32]
