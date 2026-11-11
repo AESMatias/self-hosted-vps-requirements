@@ -7,6 +7,7 @@ Use it to pick the smallest VPS that will run what you want to self-host.
 ## Results
 
 <!-- results:start -->
+
 | App | Containers | Idle RAM | Boot peak | Image size | Smallest VPS |
 |---|--:|--:|--:|--:|--:|
 | [Vaultwarden](apps/vaultwarden/) | 1 | 7 MB | 7 MB | 416 MB | **1 GB** |
@@ -44,6 +45,7 @@ _These are affiliate/referral links: they cost you nothing and help keep the mea
 - **Hostinger**: [VPS KVM 1](https://www.hostinger.com/vps-hosting?REFERRALCODE=R79AESMATPOE) (4 GB RAM, the smallest plan they sell).
 
 _These are affiliate/referral links: they cost you nothing and help keep the measurements updated._
+
 <!-- results:end -->
 
 ## What the columns mean

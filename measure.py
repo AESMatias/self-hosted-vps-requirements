@@ -216,7 +216,7 @@ def render():
         block += "\n\n† Still using CPU when the 5-minute window closed, so the idle figure may be high."
     block += "\n\n## A VPS for each size\n\n" + "\n\n".join(f"**{gb} GB apps**\n\n{vps_options(gb)}" for gb in sorted({a["min_vps_gb"] for a in ok.values()}))
     readme = ROOT / "README.md"
-    readme.write_text(re.sub(r"(?s)(<!-- results:start -->).*(<!-- results:end -->)", lambda m: f"{m[1]}\n{block}\n{m[2]}", readme.read_text()))
+    readme.write_text(re.sub(r"(?s)(<!-- results:start -->).*(<!-- results:end -->)", lambda m: f"{m[1]}\n\n{block}\n\n{m[2]}", readme.read_text()))
     DATA.write_text(json.dumps(data, indent=2) + "\n")
 
 
